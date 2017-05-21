@@ -1,4 +1,4 @@
--- Advanced Trade Skill Window v0.4.4
+-- Advanced Trade Skill Window v0.4.4.1
 -- copyright 2006 by Rene Schneider (Slarti on EU-Blackhand)
 
 -- main script file

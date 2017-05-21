@@ -235,3 +235,5 @@ v0.4.4:
            are now displayed at the correct position
 - changed: the queue will now be saved for every tradeskill and character when switching 
 	   skills and when logging in and out of the game
+v0.4.4.1
+- added:   Russian translation (thanks to Wildstier/Wladigor)

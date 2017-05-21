@@ -1,12 +1,13 @@
--- Advanced Trade Skill Window v0.4.4
+-- Advanced Trade Skill Window v0.4.4.1
 -- copyright 2006 by Rene Schneider (Slarti on EU-Blackhand)
 
 -- language file
 
 -- German and English Language by myself
+-- Russian Language by Wildstier/Wladigor
 -- French Language by Nilyn (EU Dalaran Alliance Server)
 
-ATSW_VERSION = "ATSW v0.4.4 - by Slarti on EU-Blackhand";
+ATSW_VERSION = "ATSW v0.4.4.1 - by Slarti on EU-Blackhand, ru-translation by Wildstier/Wladigor on Valkyrie";
 
 if(GetLocale()=="deDE") then
 	ATSW_SORTBYHEADERS = "nach Kategorien sortieren";
@@ -37,8 +38,8 @@ if(GetLocale()=="deDE") then
 	ATSW_OPTIONS_TITLE = "ATSW-Optionen";
 	ATSWOFIB_TEXT = "Items in eigener Bank bei der Berechnung der\nherstellbaren Items ber\195\188cksichtigen";
 	ATSW_OPTIONSBUTTON = "Optionen";
-	ATSWOFUCB_TEXT = "Anzeige einer Gesamtzahl produzierbarer Items, die alles\nim Folgenden gew\195\164hlte ber�cksichtigt";
-	ATSWOFSCB_TEXT = "Anzeige von mit Inventarinhalt herstellbaren Items und einer\nGesamtzahl, die alles im Folgenden gew\195\164hlte ber�cksichtigt";
+	ATSWOFUCB_TEXT = "Anzeige einer Gesamtzahl produzierbarer Items, die alles\nim Folgenden gew\195\164hlte ber𣫳ichtigt";
+	ATSWOFSCB_TEXT = "Anzeige von mit Inventarinhalt herstellbaren Items und einer\nGesamtzahl, die alles im Folgenden gew\195\164hlte ber𣫳ichtigt";
 	ATSWOFTB_TEXT = "Rezept-Tooltips anzeigen";
 	ATSWOFIA_TEXT = "Items im Inventar und der Bank von Twinks bei der\nBerechnung der herstellbaren Items ber\195\188cksichtigen";
 	ATSWOFIM_TEXT = "Bei H\195\164ndlern kaufbare Items bei der Berechnung\nder herstellbaren Items ber\195\188cksichtigen";
@@ -95,8 +96,8 @@ elseif (GetLocale()=="frFR") then
 	ATSW_ITEMSMISSING2 = ":";
 	ATSW_FILTERLABEL = "Filtre:";
 	ATSW_REAGENTLIST1 = "Pour produir 1x ";
-	ATSW_REAGENTLIST2 = " les composants suivants sont n�cessaire:";
-	ATSW_REAGENTFRAMETITLE = "Les Composants suivants sont n�cessaire pour produire la file:";
+	ATSW_REAGENTLIST2 = " les composants suivants sont nꤥssaire:";
+	ATSW_REAGENTFRAMETITLE = "Les Composants suivants sont nꤥssaire pour produire la file:";
 	ATSW_REAGENTBUTTON = "Composant";
 	ATSW_REAGENTFRAME_CH1 = "Inv.";
 	ATSW_REAGENTFRAME_CH2 = "Banque";
@@ -151,6 +152,79 @@ elseif (GetLocale()=="frFR") then
 	ATSWCS_ADDCATEGORY = "Nouvelle Cat\195\169gorie";
 	ATSWCS_NOTHINGINCATEGORY = "< Vide >";
 	ATSWCS_UNCATEGORIZED = "Non Class\195\169";
+	
+	elseif (GetLocale()=="ruRU") then
+	ATSW_SORTBYHEADERS = "Сортировка по категориям";
+	ATSW_SORTBYNAMES = "Сортировка по имени";
+	ATSW_SORTBYDIFFICULTY = "Сортировка по навыку";
+	ATSW_CUSTOMSORTING = "Своя сортировка";
+	ATSW_QUEUE = "Очередь";
+	ATSW_QUEUEALL = "Все в очередь";
+	ATSW_DELETELETTER = "-";
+	ATSW_STARTQUEUE = "Обработать очередь";
+	ATSW_STOPQUEUE = "Остановить обработку";
+	ATSW_DELETEQUEUE = "Очистить очередь";
+	ATSW_ITEMSMISSING1 = "К сожалению для создания ";
+	ATSW_ITEMSMISSING2 = " отсутствуют следущие предметы:";
+	ATSW_FILTERLABEL = "Фильтр:";
+	ATSW_REAGENTLIST1 = "Чтобы создать 1x ";
+	ATSW_REAGENTLIST2 = ", нужны следующие реагенты:";
+	ATSW_REAGENTFRAMETITLE = "Для обработки очереди нужны следующие реагенты:";
+	ATSW_REAGENTBUTTON = "Реагенты";
+	ATSW_REAGENTFRAME_CH1 = "Инвентарь";
+	ATSW_REAGENTFRAME_CH2 = "Банк";
+	ATSW_REAGENTFRAME_CH3 = "Альт";
+	ATSW_REAGENTFRAME_CH4 = "Продавец";
+	ATSW_ALTLIST1 = "Следующие альты имеют '";
+	ATSW_ALTLIST2 = "':";
+	ATSW_ALTLIST3 = " в инвентаре на  ";
+	ATSW_ALTLIST4 = " в банке на  ";
+	ATSW_OPTIONS_TITLE = "Настройки ATSW";
+	ATSWOFIB_TEXT = "Учитывать предметы в своем банке при расчете\nпроизводимых предметов";
+	ATSW_OPTIONSBUTTON = "Настройки";
+	ATSWOFUCB_TEXT = "Показать только общее количество производимых предметов,\nрассматривая следующие варианты";
+	ATSWOFSCB_TEXT = "Показать количество предметов, которые можно создать из содержимого \nинвентаря, и количество предметов, рассматривая следущие варианты";
+	ATSWOFTB_TEXT = "Показать подсказку для рецептов";
+	ATSWOFIA_TEXT = "Учитывать предметы в инвентаре и в банке альтов при\nрасчете производимых предметов";
+	ATSWOFIM_TEXT = "Учитывать покупаемые у продавцов предметы при\nрасчете создаваемых предметов";
+	ATSW_BUYREAGENTBUTTON = "Купить доступные реагенты у выбранного продавца";
+	ATSWOFAB_TEXT = "Автоматически покупать все для очереди при разговоре с продавцом";
+	ATSW_AUTOBUYMESSAGE = "ATSW купил автоматически следущие предметы:";
+	ATSW_TOOLTIP_PRODUCABLE = " можно создать из реагентов в инвентаре"
+	ATSW_TOOLTIP_NECESSARY = "Чтобы создать один экземпляр, нужны следующие реагенты:";
+	ATSW_TOOLTIP_BUYABLE = " (покупаемо)";
+	ATSW_TOOLTIP_LEGEND = "(Предметы в инвентаре / Предметы в банке / Предметы на альтах)";
+	ATSW_CONTINUEQUEUE = "Продолжить";
+	ATSW_ABORTQUEUE = "Отменить";
+	ATSWCF_TITLE = "Возобновить обработку очереди?";
+	ATSWCF_TEXT = "К сожаления с патча 1.10 для создания предметов требуется нажимать кнопку вручную. При нажатии на 'Продолжить' Вы производите это действие, и обработка очереди может продолжиться.";
+	ATSWCF_TITLE2 = "Следущий предмет в очереди:";
+	ATSW_CSBUTTON = "редактировать";
+	ATSW_AUTOBUYBUTTON_TOPTEXT = "Этот продавец продает нужные реагенты!";
+	ATSW_AUTOBUYBUTTON_TEXT = "Купить реагенты";
+	ATSW_SHOPPINGLISTFRAMETITLE = "Список покупок, которые нужны для создания предметов из очереди:";
+	ATSWOFSLB_TEXT = "Показывать список покупок у аукционного дома";
+	ATSW_ENCHANT = "Зачаровать";
+	ATSW_ACTIVATIONMESSAGE = "ATSW для актуального умения был";
+	ATSW_ACTIVATED = "активирован";
+	ATSW_DEACTIVATED = "деактивирован";
+	ATSW_SCAN_MINLEVEL = "Нужен уровень (%d+)";
+
+	atsw_blacklist = {
+		[1] = "Тонкая кожа",
+		[2] = "Жесткая кожа",
+		[3] = "Толстая кожа",
+		[4] = "Плотная кожа",
+		[5] = "Грубая кожа",
+	};
+
+	ATSWCS_TITLE = "Advanced Trade Skill Window - Редактор сортировки рецептов";
+	ATSWCS_TRADESKILLISTTITLE = "Рецепты без категории";
+	ATSWCS_CATEGORYLISTTITLE = "Рецепты с категорией";
+	ATSWCS_ADDCATEGORY = "Новая категория";
+	ATSWCS_NOTHINGINCATEGORY = "< Категория пуста >";
+	ATSWCS_UNCATEGORIZED = "Без категории";
+	
 else
 	ATSW_SORTBYHEADERS = "Order by Categories";
 	ATSW_SORTBYNAMES = "Order by Names";
